@@ -1,3 +1,7 @@
+.visible {
+  visibility: visible;
+}
+
 .top-info {
   background-color: #2626a8;
   text-align: center;
@@ -190,6 +194,7 @@
 .logo {
   text-align: center;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .logo img {
@@ -208,6 +213,7 @@
           align-items: center;
   border: 1px solid #7c7c7c;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .select-location span {
@@ -217,8 +223,9 @@
 }
 
 .select-location p {
-  font-size: 14px;
+  font-size: 13px;
   color: navy;
+  font-weight: bold;
 }
 
 .search {
@@ -260,6 +267,7 @@
   border-radius: 50%;
   font-size: 30px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .total-price {
@@ -272,10 +280,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 0;
 }
 
 .total-price span {
   font-size: 20px;
+  cursor: pointer;
 }
 
 .cart {
@@ -298,6 +308,7 @@
   font-size: 30px;
   padding: 10px;
   color: red;
+  cursor: pointer;
 }
 
 .cart sup {
@@ -312,5 +323,194 @@
   color: white;
   border-radius: 50%;
   padding: 5px;
+}
+
+.categories {
+  position: relative;
+}
+
+.categories .btn {
+  background-color: #429dff;
+  width: 100%;
+  border-radius: 18px;
+  height: 50px;
+}
+
+.categories .btn:hover {
+  background-color: #429dff;
+}
+
+.categories .btn i {
+  padding-right: 20px;
+}
+
+.categories .btn span {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  border: 1px solid #7c7c7c;
+  background-color: #e0dcdc;
+  color: #7c7c7c;
+  font-size: 9px;
+  border-radius: 10px;
+}
+
+.categories .dropdown-menu {
+  height: 250px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.categories .dropdown-menu li {
+  text-align: center;
+  width: 300px;
+  padding-bottom: 5px;
+}
+
+.categories .dropdown-menu li a {
+  text-decoration: none;
+  color: #7c7c7c;
+  font-size: 15px;
+}
+
+.categories .dropdown-menu li a:hover {
+  color: #429dff;
+}
+
+.nav-buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-buttons ul li {
+  list-style: none;
+}
+
+.nav-buttons ul li button {
+  background-color: transparent;
+  color: #3b3a3a;
+  border-radius: 20px;
+}
+
+.nav-buttons ul li button:hover {
+  color: #429dff;
+  background-color: #cde2f8;
+}
+
+.home-shop {
+  position: relative;
+}
+
+.home-shop .home-nav {
+  padding-left: 27%;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.home-shop .home-nav ul {
+  border: 1px solid #7c7c7c;
+  width: 150px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+}
+
+.home-shop .home-nav ul li {
+  list-style: none;
+  line-height: 200%;
+}
+
+.home-shop .home-nav ul li a {
+  text-decoration: none;
+  color: #7c7c7c;
+}
+
+.home-shop .home-nav ul li a:hover {
+  color: #429dff;
+}
+
+.home-shop .shop-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid #7c7c7c;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+.home-shop .shop-nav ul li {
+  list-style: none;
+  cursor: pointer;
+  color: #7c7c7c;
+}
+
+.home-shop .shop-nav ul li:hover {
+  color: #429dff;
+}
+
+.advert-top {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.advert-top .first img {
+  width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: absolute;
+}
+
+.advert-top .first .first-advert-text {
+  position: absolute;
+  padding-top: 5%;
+  left: 10%;
+}
+
+.advert-top .first .first-advert-text .first-top-right {
+  background-image: -webkit-gradient(linear, left top, right top, from(#a9ffa9), to(white));
+  background-image: linear-gradient(to right, #a9ffa9, white);
+  border-radius: 20px;
+  color: green;
+}
+
+.advert-top .first .first-advert-text .first-top-header {
+  font-weight: bold;
+}
+
+.advert-top .first .first-advert-text .first-bottom-header {
+  font-weight: bold;
+}
+
+.advert-top .first .first-advert-text .second-bottom-right {
+  font-size: 40px;
+  color: red;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.advert-top .first .first-advert-text .first-advert-btn {
+  color: #429dff;
+  border-radius: 20px;
+  color: white;
+}
+
+.advert-top .second {
+  z-index: 0;
+}
+
+.advert-top .second img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
