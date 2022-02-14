@@ -610,4 +610,117 @@
 .q-categories .bubly-card-body {
   text-align: center;
 }
+
+.timer {
+  width: 390px;
+  height: 744px;
+  border: 2px solid #b60000;
+  border-radius: 10px;
+}
+
+.timer .timer-elements {
+  padding: 30px 20px;
+}
+
+.timer .timer-elements span {
+  color: navy;
+  font-size: 20px;
+}
+
+.timer .timer-elements .week {
+  font-weight: bolder;
+}
+
+.timer .timer-elements .clock {
+  position: relative !important;
+  padding-top: 0px;
+  margin-left: -194px;
+  height: 100px;
+  width: 800px;
+  zoom: 0.8;
+  transform: scale(0.54);
+  -ms-transform: scale(0.54);
+  -webkit-transform: scale(0.54);
+  -o-transform: scale(0.54);
+  -moz-transform: scale(0.54);
+}
+
+.timer .timer-elements p {
+  font-size: 12px;
+  color: #7c7c7c;
+}
+
+.timer .timer-elements .photo {
+  position: relative;
+}
+
+.timer .timer-elements .photo .offer {
+  position: absolute;
+  left: 10%;
+  width: 75px;
+  height: 75px;
+  border: 1px solid red;
+  border-radius: 50%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timer .timer-elements .photo .offer span {
+  font-size: 40px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.timer .timer-elements .photo img {
+  width: 350px;
+  height: 250px;
+}
+
+.timer .timer-elements .discount .red {
+  font-size: 30px;
+  color: #ff2d2d;
+  font-family: sans-serif;
+}
+
+.timer .timer-elements .discount .lined {
+  font-size: 25px;
+  color: silver;
+  text-decoration: line-through;
+  font-family: sans-serif;
+}
+
+.timer .timer-elements .link {
+  padding-top: 20px;
+}
+
+.timer .timer-elements .link a {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.timer .timer-elements .link a:hover {
+  color: #010192;
+}
+
+.timer .timer-elements .stock .kg {
+  color: #7c7c7c;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.timer .timer-elements .stock .in {
+  color: #03a003;
+  font-size: 13px;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
