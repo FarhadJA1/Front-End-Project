@@ -882,4 +882,8 @@
   color: #ff2d2d;
   font-family: sans-serif;
 }
+
+.display-none {
+  visibility: hidden;
+}
 /*# sourceMappingURL=style.css.map */

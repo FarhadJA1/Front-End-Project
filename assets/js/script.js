@@ -54,6 +54,36 @@ $(function () {
     clock.setTime(220880);
     clock.setCountdown(true);
     clock.start();
+
+    // $(".discound-card").mouseover(function () {
+    //     if ($(this).attr("data-id") == $(".button").attr("data-id")) {
+    //         $(".button").removeClass("d-none");
+    //     }
+    // })
+    // $(".discound-card").mouseout(function () {
+    //     if ($(this).attr("data-id") == $(".button").attr("data-id")) {
+    //         $(".button").addClass("d-none");
+    //     }
+    // })
+
+    $(document).on("mouseover",".discount-card",function () {
+
+        $(this).children().last().children().last().removeClass("display-none")
+        $(this).css("height","360px")
+        $(this).children().last().children().last().css({
+            "margin-top":"10px",
+            "transition":"all 0.2s"
+        })
+    })
+    $(document).on("mouseleave",".discount-card",function () {
+        $(this).children().last().children().last().addClass("display-none")
+        $(this).css("height","348px")
+        $(this).children().last().children().last().css({
+            "margin-top":"0px",
+            "transition":"all 0.2s"
+        })
+
+    })
     
 
 
