@@ -55,16 +55,7 @@ $(function () {
     clock.setCountdown(true);
     clock.start();
 
-    // $(".discound-card").mouseover(function () {
-    //     if ($(this).attr("data-id") == $(".button").attr("data-id")) {
-    //         $(".button").removeClass("d-none");
-    //     }
-    // })
-    // $(".discound-card").mouseout(function () {
-    //     if ($(this).attr("data-id") == $(".button").attr("data-id")) {
-    //         $(".button").addClass("d-none");
-    //     }
-    // })
+    
 
     $(document).on("mouseover",".discount-card",function () {
 
@@ -84,7 +75,50 @@ $(function () {
         })
 
     })
+
+
+    $(document).on("mouseover",".buy-now-card",function () {
+
+        $(this).children().last().children().last().removeClass("display-none")
+        $(this).css("height","450px")
+        $(this).children().last().children().last().css({
+            "margin-top":"10px",
+            "transition":"all 0.2s"
+        })
+    })
+    $(document).on("mouseleave",".buy-now-card",function () {
+        $(this).children().last().children().last().addClass("display-none")
+        $(this).css("height","400px")
+        $(this).children().last().children().last().css({
+            "margin-top":"0px",
+            "transition":"all 0.2s"
+        })
+
+    })
     
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        
+        
+        smartSpeed: 1500,
+        animateIn: 'linear',
+        animateOut: 'linear',
+        responsive:{
+        
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
 
 
 
