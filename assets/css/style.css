@@ -1217,6 +1217,10 @@
   height: 100%;
 }
 
+#picture-adverts .col-4 .card .card-img-overlay {
+  margin: 10px;
+}
+
 #picture-adverts .col-4 .card .card-img-overlay .up {
   color: #0d520d;
   font-family: sans-serif;
@@ -1229,5 +1233,84 @@
 
 #picture-adverts .col-4 .card .card-img-overlay .down {
   color: #7c7c7c;
+}
+
+#picture-adverts .col-4 .card .card-img-overlay .img-advert-btn {
+  border-radius: 20px;
+  background-color: #c4c4c4;
+  color: white;
+}
+
+#picture-adverts .info .info-header {
+  cursor: pointer;
+  color: #a3a3a3;
+  font-family: sans-serif;
+}
+
+#picture-adverts .info .info-text {
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#picture-adverts .info .info-date {
+  cursor: pointer;
+  color: #a3a3a3;
+}
+
+#picture-adverts .info .info-comments {
+  cursor: pointer;
+}
+
+#picture-adverts .info .info-italic {
+  font-style: italic;
+  color: #a3a3a3;
+}
+
+#picture-adverts .info .info-name {
+  cursor: pointer;
+}
+
+#footer-blue .subscribe {
+  background-color: #1e1e81;
+}
+
+#footer-blue .subscribe .subscribe-content {
+  padding-top: 44px;
+}
+
+#footer-blue .subscribe .subscribe-content .subscribe-info {
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#footer-blue .subscribe .subscribe-content .subscribe-advert {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+#footer-blue .subscribe .subscribe-content .subscribe-text {
+  color: #adabab;
+}
+
+#footer-blue .subscribe .subscribe-content .input-group i {
+  font-size: 30px;
+  border: 1px solid white;
+  background-color: white;
+  width: 40px;
+  color: #7c7c7c;
+  text-align: center;
+}
+
+#footer-blue .subscribe .subscribe-content .subscribe-btn {
+  background-color: white;
+  color: navy;
+}
+
+#footer-blue .subscribe .subscribe-content .subscribe-btn:hover {
+  background-color: navy;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
