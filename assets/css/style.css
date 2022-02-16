@@ -1313,4 +1313,134 @@
   background-color: navy;
   color: white;
 }
+
+#text-info .icon-info {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#text-info .icon-info .goods-info {
+  border-right: 1px solid #c4c4c4;
+}
+
+#text-info .icon-info .goods-info span {
+  font-size: 14px;
+  color: #3d3d3d;
+  font-family: sans-serif;
+}
+
+#text-info .icon-info .goods-info i {
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+#text-info .icon-info .delivery-info {
+  border-right: 1px solid #c4c4c4;
+}
+
+#text-info .icon-info .delivery-info span {
+  font-size: 14px;
+  color: #3d3d3d;
+  font-family: sans-serif;
+}
+
+#text-info .icon-info .delivery-info i {
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+#text-info .icon-info .discount-info {
+  border-right: 1px solid #c4c4c4;
+}
+
+#text-info .icon-info .discount-info span {
+  font-size: 14px;
+  color: #3d3d3d;
+  font-family: sans-serif;
+}
+
+#text-info .icon-info .discount-info i {
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+#text-info .icon-info .price-info span {
+  font-size: 14px;
+  color: #3d3d3d;
+  font-family: sans-serif;
+}
+
+#text-info .icon-info .price-info i {
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+#footer-navbar .navigation {
+  background-color: #f0f0f0;
+}
+
+#footer-navbar .navigation .custom-col ul {
+  padding-top: 35px;
+}
+
+#footer-navbar .navigation .custom-col ul li {
+  list-style: none;
+}
+
+#footer-navbar .navigation .custom-col ul li h6 {
+  color: grey;
+  font-family: sans-serif;
+}
+
+#footer-navbar .navigation .custom-col ul li a {
+  text-decoration: none;
+  color: #969696;
+  font-family: sans-serif;
+}
+
+#footer-contact-details .contact-details {
+  border-bottom: 1px solid #3d3d3d;
+}
+
+#footer-contact-details .contact-details .left .icon {
+  font-size: 40px;
+}
+
+#footer-contact-details .contact-details .left .text .down {
+  font-size: 13px;
+  color: #bdbdbd;
+}
+
+#footer-contact-details .contact-details .right .left-detail .p-up {
+  font-weight: 600;
+}
+
+#footer-contact-details .contact-details .right .left-detail .p-down {
+  font-size: 13px;
+  color: #bdbdbd;
+}
+
+#footer-contact-details .contact-details .right .right-detail i {
+  font-size: 32px;
+  color: navy;
+}
+
+#end .end .copyright p {
+  font-size: 13px;
+  color: #969696;
+}
+
+#end .end .privacy {
+  text-align: end;
+}
+
+#end .end .privacy a {
+  text-decoration: none;
+  color: #969696;
+  font-size: 13px;
+}
+
+#end .end .privacy a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
