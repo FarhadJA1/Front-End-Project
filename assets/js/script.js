@@ -81,6 +81,7 @@ $(function () {
 
         $(this).children().last().children().last().removeClass("display-none")
         $(this).css("height","450px")
+        
         $(this).children().last().children().last().css({
             "margin-top":"10px",
             "transition":"all 0.2s"
@@ -89,6 +90,7 @@ $(function () {
     $(document).on("mouseleave",".buy-now-card",function () {
         $(this).children().last().children().last().addClass("display-none")
         $(this).css("height","400px")
+        
         $(this).children().last().children().last().css({
             "margin-top":"0px",
             "transition":"all 0.2s"
@@ -119,6 +121,7 @@ $(function () {
             }
         }
     })
+
     $(document).on("click",".product-categories-plus",function () {
         $(this).parent().parent().children().last().toggleClass("d-none");
         $(this).toggleClass("fas fa-plus")
@@ -131,19 +134,17 @@ $(function () {
             $(".product-categories-checkbox").css("overflow-y","auto")
         }
     })
-   
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
 
+    slider.oninput = function() {
+    output.innerHTML = this.value;
 
-
-
-
-
-
-
-
-
-
-
+}
+$(document).on("click",".show-grid",function () {
+    console.log("hello");
+})
 
 
 
