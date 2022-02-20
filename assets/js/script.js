@@ -134,6 +134,9 @@ $(function () {
             $(".product-categories-checkbox").css("overflow-y","auto")
         }
     })
+
+    
+
     var slider = document.getElementById("myRange");
     var output = document.getElementById("demo");
     output.innerHTML = slider.value;
@@ -142,9 +145,8 @@ $(function () {
     output.innerHTML = this.value;
 
 }
-$(document).on("click",".show-grid",function () {
-    console.log("hello");
-})
+
+
 
 
 })

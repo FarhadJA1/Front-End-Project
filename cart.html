@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="./assets/css/owl.theme.default.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/flipclock.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="Shortcut Icon" href="https://klbtheme.com/bacola/wp-content/uploads/2021/08/favicon.png"
         type="image/x-icon">
+
     <title>Cart - Bacola - Grocery Market and Food Theme</title>
 </head>
 
 <body>
     <header>
+
         <section>
             <div class="top-info">
                 <p>Due to the</p>
@@ -30,8 +33,8 @@
                     <div class="col-md-4 col-sm-6 top-nav">
                         <nav>
                             <ul>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">My Account</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="login.html">My Account</a></li>
                                 <li><a href="">Wishlist</a></li>
                                 <li><a href="">Order Tracking</a></li>
                             </ul>
@@ -80,15 +83,92 @@
                         <span>Online Grocery Shopping Center</span>
                     </div>
                     <div class="row select-location col-md-2 col-sm-2">
-                        <div class="col-8">
-                            <span>Your Location</span>
-                            <p>Select a Location</p>
-                        </div>
-                        <div class="col-4">
-                            <i class="fas fa-angle-down"></i>
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="your-location-text">Your Location</p>
+                                    <p class="select-location-text">Select a location</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p class="modal-title" id="exampleModalLabel">Choose your Delivery Location</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+
+                                    </div>
+
+                                    <p class="modal-info">Enter your address and we will specify the offer for your
+                                        area.</p>
+                                    <div class="modal-body">
+                                        <form class="d-flex">
+                                            <input class="form-control me-2 search-area" type="search"
+                                                placeholder="Search your area" aria-label="Search">
+                                        </form>
+                                        <div class="select">
+                                            <a href="">Choose your loaction</a>
+                                            <span>Clear All</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Alabama</a>
+                                            <span>Min: $130</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Alaska</a>
+                                            <span>$120</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Arizona</a>
+                                            <span>$150</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">California</a>
+                                            <span>$110</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Colorado</a>
+                                            <span>$140</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Florida</a>
+                                            <span>$160</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Georgia</a>
+                                            <span>$120</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Kansas</a>
+                                            <span>$170</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Minessota</a>
+                                            <span>$120</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">New York</a>
+                                            <span>$110</span>
+                                        </div>
+                                        <div class="select">
+                                            <a href="">Wasgington</a>
+                                            <span>$130</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 search">
+                    <div class="col-5 search">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search for products"
                             aria-label="Search">
                         <i class="fas fa-search"></i>
@@ -108,35 +188,38 @@
                 </div>
                 <div class="A row mt-3">
                     <div class="dropdown categories col-md-3">
-                        <button class="btn-categories btn btn-secondary dropdown-toggle" type="button"
-                            id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-bars"></i> All categories <span>TOTAL 63 PRODUCTS</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><a href="">Fruits & Vegetables <i class="fas fa-angle-right"></i></a> </li>
-                            <li><a href="">Meats & Seafood</a></li>
-                            <li><a href="">Breakfast & Diary</a></li>
-                            <li><a href="">Beverages <i class="fas fa-angle-right"></i></a></li>
-                            <li><a href="">Breads & Bakery</a></li>
-                            <li><a href="">Frozen Foods</a></li>
-                            <li><a href="">Biscuits & Snacks</a></li>
-                            <li><a href="">Grocery & Staples</a></li>
-                        </ul>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bars"></i> All categories <span>TOTAL 63 PRODUCTS</span>
+                            </button>
+                            <ul class="dropdown-menu mt-5">
+                                <li><a href="">Fruits & Vegetables <i class="fas fa-angle-right"></i></a> </li>
+                                <li><a href="">Meats & Seafood</a></li>
+                                <li><a href="">Breakfast & Diary</a></li>
+                                <li><a href="">Beverages <i class="fas fa-angle-right"></i></a></li>
+                                <li><a href="">Breads & Bakery</a></li>
+                                <li><a href="">Frozen Foods</a></li>
+                                <li><a href="">Biscuits & Snacks</a></li>
+                                <li><a href="">Grocery & Staples</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-8 nav-buttons">
                         <ul>
-                            <li><button id="home-btn" type="button" class="btn btn-light">HOME <i
-                                        class="fa fa-caret-down"></i></button></li>
-                            <li><button id="shop-btn" type="button" class="btn btn-light">SHOP <i
-                                        class="fa fa-caret-down"></i></button></li>
+                            <li><button id="home-btn" type="button" class="btn btn-light"><a href="index.html">HOME</a>
+                                    <i class="fa fa-caret-down"></i></button></li>
+                            <li><button id="shop-btn" type="button" class="btn btn-light"><a href="shop.html">SHOP</a>
+                                    <i class="fa fa-caret-down"></i></button></li>
                             <li><button type="button" class="btn btn-light"><i class="fas fa-fish"></i>MEATS &
                                     SEAFOOD</button></li>
                             <li><button type="button" class="btn btn-light"><i
                                         class="fas fa-bread-slice"></i>BAKERY</button></li>
                             <li><button type="button" class="btn btn-light"><i
                                         class="fas fa-mug-hot"></i>BEVERAGES</button></li>
-                            <li><button type="button" class="btn btn-light">BLOG</button></li>
-                            <li><button type="button" class="btn btn-light">CONTACT</button></li>
+                            <li><button type="button" class="btn btn-light"><a href="blog.html">BLOG</a></button></li>
+                            <li><button type="button" class="btn btn-light"><a href="contact.html">CONTACT</a></button>
+                            </li>
 
                         </ul>
 
@@ -214,27 +297,24 @@
                 <div class="container">
                     <a href="index.html">HOME</a>
                     <i class="fas fa-angle-right"></i>
-                    <span>CART</span>
+                    <span>MY ACCOUNT</span>
                 </div>
             </div>
         </section>
-        <section id="cart-info">
-            <div class="cart-info">
+        <section id="cart-updated-message">
+            <div class="cart-updated-message mt-3">
                 <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-lg-12">
-                            <p>Cart updated.</p>
-                        </div>
-                    </div>
+                    <p>Cart updated.</p>
                 </div>
+
             </div>
         </section>
-        <section id="cart">
-            <div class="cart">
+        <section id="cart-page-content">
+            <div class="cart-page-content">
                 <div class="container">
-                    <div class="row mt-3">
+                    <div class="row mt-4">
                         <div class="col-8">
-                            <div class="table">
+                            <div class="cart-page-table">
                                 <table>
                                     <tr>
                                         <th></th>
@@ -242,129 +322,138 @@
                                         <th>Price</th>
                                         <th>Quantity</th>
                                         <th>Subtotal</th>
-                                        <th></th>
                                     </tr>
                                     <tr>
                                         <td><img src="./assets/img/italian-meatballs.jpg" alt=""></td>
-                                        <td><a href=""></a>All Italian-Style Chicken Meatballs</td>
+                                        <td>All Natural Italian-Style Chicken Meatballs</td>
                                         <td>$7.25</td>
                                         <td>
-                                            <button class="cart-minus"><i class="fas fa-minus"></i></button>
+                                            <button>
+                                                <i class="fas fa-minus"></i>
+                                            </button>
                                             <span>1</span>
-                                            <button class="cart-plus"><i class="fas fa-plus"></i></button>
+                                            <button>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
                                         </td>
-                                        <td class="subtotal">$7.25</td>
-                                        <td><button class="delete"><i class="fas fa-times"></i></button></td>
+                                        <td>$7.25</td>
+                                        <td><i style="cursor: pointer;" class="fas fa-times"></i></td>
                                     </tr>
                                     <tr>
                                         <td><img src="./assets/img/boom-chicka.jpg" alt=""></td>
-                                        <td><a href=""></a>Angie's Boomchickapop Sweet & Salty Kettle Corn</td>
+                                        <td>Angie's Boomchickapop Sweet & Salty Kettle Corn</td>
                                         <td>$3.29</td>
                                         <td>
-                                            <button class="cart-minus"><i class="fas fa-minus"></i></button>
+                                            <button class="cart-page-minus-button">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
                                             <span>1</span>
-                                            <button class="cart-plus"><i class="fas fa-plus"></i></button>
+                                            <button class="cart-page-minus-plus">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
                                         </td>
-                                        <td class="subtotal">$3.29</td>
-                                        <td><button class="delete"><i class="fas fa-times"></i></button></td>
+                                        <td>$3.29</td>
+                                        <td><i style="cursor: pointer;" class="fas fa-times"></i></td>
                                     </tr>
                                 </table>
                             </div>
-                            <div class="coupon">
+                            <div class="coupon mt-4">
                                 <div class="row">
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" placeholder="Coupon code"
-                                                    aria-label="Username" aria-describedby="basic-addon1">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <button type="button" class="apply btn btn-primary">Apply
-                                                    coupon</button>
-                                            </div>
+                                    <div class="col-8">
+                                        <div class="apply">
+                                            <input type="text" class="form-control" placeholder="Coupon code"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                            <button type="button" class="btn btn-primary apply-btn">Apply
+                                                coupon</button>
                                         </div>
+
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-4">
                                         <div class="update">
-                                            <button type="button" class="btn btn-primary disabled">Update cart</button>
+                                            <button type="button" class="btn btn-primary update-btn disabled">Update
+                                                cart</button>
                                         </div>
-
                                     </div>
-
-
                                 </div>
+
                             </div>
-
-
                         </div>
                         <div class="col-4">
-                            <div class="proceed-to-check">
-                                <div class="cart-totals">
-                                    <h5>CART TOTALS</h5>
-                                    <hr>
-                                    <div class="right-subtotal">
-                                        <strong>Subtotal</strong>
-                                        <spap>$13.83</span>
-                                    </div>
-                                    <div class="shipping">
-                                        <div class="row mt-3">
-                                            <div class="col-4">
-                                                <div class="shipping-title">
-                                                    <strong>Shipping</strong>
-                                                </div>
+                            <div class="cart-totals">
+                                <h5>CART TOTALS</h5>
+                                <hr>
+                                <div class="subtotal">
+                                    <strong>Subtotal</strong>
+                                    <span>$21.08</span>
+                                </div>
+                                <div class="shipping mt-4">
+                                    <div class="row ">
+                                        <div class="col-4">
+                                            <div class="shipping-title">
+                                                <strong>Shipping</strong>
                                             </div>
-                                            <div class="col-8">
-                                                <div class="shipping-content">
-                                                    <ul>
-                                                        <li><label class="form-check-label" for="flexRadioDefault1">
-                                                            <span>Flat rate: </span>
-                                                            <span class="price">$5.00</span>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="shipping-content">
+                                                <ul>
+                                                    <li>
+
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            <span>Flat rate:</span>
+                                                            <span style="color: rgb(248, 62, 62);">$5.00</span>
                                                         </label>
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="flexRadioDefault1"></li>
-                                                        <li><label class="form-check-label" for="flexRadioDefault1">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault1">
+
+
+
+                                                    </li>
+                                                    <li>
+                                                        <label class="form-check-label" for="flexRadioDefault1">
                                                             <span>Free shipping</span>
                                                         </label>
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="flexRadioDefault1"></li>
-                                                        <li><label class="form-check-label" for="flexRadioDefault1">
-                                                            <span>Local pickup</span>                                                    
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault1">
+
+                                                    </li>
+                                                    <li>
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            <span>Local pickup</span>
                                                         </label>
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="flexRadioDefault1"></li>
-                                                        <li><label class="form-check-label" for="flexRadioDefault1">
-                                                            <span>Shipping to </span>
-                                                            <strong>AL</strong>
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault1">
+
+                                                    </li>
+                                                    <li>
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            <span>Shipping to</span>
+                                                            <strong>AL.</strong>
                                                         </label>
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                            id="flexRadioDefault1"></li>
-                                                        <li class="mt-3"><a href="">Change address</a></li>    
-                                                    </ul>
-                                                    
-                                                </div>
-                                                
+                                                        
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <a href="">Change address</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="total">
-                                    <strong>Total</strong>
-                                    <strong class="total-price">$18.83</strong>
+                                <div class="car-page-total-price mt-3">
+                                    <span>Total</span>
+                                    <strong>$26.08</strong>
                                 </div>
                                 <div class="proceed">
                                     <div class="row">
                                         <button type="button" class="btn btn-danger">Proceed to checkout</button>
                                     </div>
-                                    
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
         <section id="footer-blue">
@@ -563,6 +652,14 @@
                                     <img src="./assets/img/payments.jpg" alt="">
                                 </div>
                             </div>
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>

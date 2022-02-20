@@ -6,6 +6,7 @@ $font:sans-serif;
     
 }
 
+
 .top-info{
     background-color: rgb(38, 38, 168);
     text-align: center;
@@ -120,6 +121,7 @@ $font:sans-serif;
             border-bottom-left-radius: 10%;
             border-bottom-right-radius: 10%;
             font-family: $font;
+            z-index: 1000;
             a{
                 text-decoration: none;
                 color: $grey;
@@ -138,6 +140,8 @@ $font:sans-serif;
             box-shadow: 0px 8px 16px 0px;
             border-bottom-left-radius: 10%;
             border-bottom-right-radius: 10%;
+            z-index: 100;
+            background-color: white;
             
             a{
                 text-decoration: none;
@@ -158,8 +162,10 @@ $font:sans-serif;
     margin-right: 15px;
     cursor: pointer;
     
+    
     img{
         width: 100%;
+        
     }
     span{
         font-size: 13px;
@@ -168,26 +174,82 @@ $font:sans-serif;
     }
 }
 .select-location{
-    align-items: center;
-    border: 1px solid $grey;
+    height: 56px;
+    border: 1px solid rgb(201, 200, 200);
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
-    span{
-        font-size: 13px;
-        color: $grey;
-        font-family: $font;
+    .btn-light{
+        position: relative;
+        background-color: transparent;
+        height: 100%;
+        border: none;
+        &:hover{
+            background-color: transparent;
+        }
+        &:focus{
+            box-shadow: none;
+        }
     }
-    p{
-        font-size: 13px;
+    .your-location-text{
+        font-size: 12px;
+        height: 10px;
+        color: rgb(163, 161, 161);
+    }
+    .select-location-text{
+        font-size: 14px;
+        height: 10px;
+        font-weight: 600; 
         color: navy;
-        font-weight: bold;
     }
+    i{
+        position: absolute;
+        top: 40%; right: 10%; 
+        color: grey;
+    }
+    .modal-title{
+        font-weight: 600;
+    }
+    .modal-info{
+        text-align: center;
+        font-size: 14px;
+        color: $grey;
+    }
+    .modal-body{
+        .search-area{
+            border-radius: 10px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .select{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid rgb(201, 200, 200);
+            a{
+                text-decoration: none;
+                color: grey;
+                &:hover{
+                    color: navy;
+                }
+            }
+            span{
+                font-size: 12px;
+                border: 1px solid rgb(201, 200, 200);
+                border-radius: 20px;
+                padding: 5px;
+                color: rgb(201, 200, 200);
+            }
+        }
+    }
+    
 }
 .search{
     position: relative;
     margin-left: 10px;
-    height: 76px;
+    height: 56px;
 
     
     input{
@@ -195,9 +257,11 @@ $font:sans-serif;
         z-index: 0;
         height: 100%;
         border-radius: 10px;
-        background-color: rgb(219, 219, 219)
+        background-color: rgb(219, 219, 219);
     
-
+        &:focus{
+            box-shadow: none;
+        }
     }
     i{
         position: absolute;
@@ -205,12 +269,16 @@ $font:sans-serif;
         right: 7%;
         top: 40%;
     }
+    
 }
 .account{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 3px;
+    height: 56px;
+    z-index: -1000;
+    color: rgb(71, 70, 70);
     
     i{
        
@@ -224,7 +292,8 @@ $font:sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 0;
+    z-index: -100;
+    height: 56px;
     
     
     span{
@@ -238,6 +307,7 @@ $font:sans-serif;
     justify-content: center;
     margin-left: 3px;
     position: relative;
+    height: 56px;
     
     
     i{
@@ -254,7 +324,7 @@ $font:sans-serif;
     sup{
         position: absolute;
         top: 30%;
-        right:12%;
+        right:17%;
         span{
             font-size: 10px;
             background-color: rgb(248, 50, 50);
@@ -292,6 +362,7 @@ $font:sans-serif;
             border-radius: 10px;
         }
     }
+    
     .dropdown-menu{
         height: 250px;
         
@@ -320,9 +391,14 @@ $font:sans-serif;
             list-style: none;
             
             button{
+                a{
+                    text-decoration: none;
+                    color: rgb(59, 58, 58)
+
+                }
                 
                 background-color: transparent;
-                color: rgb(59, 58, 58);
+                ;
                 border-radius: 20px;
                 
                 
@@ -333,7 +409,10 @@ $font:sans-serif;
 
                 }
                 &:hover i{
-                    color: rgb(59, 58, 58);
+                    color: $blue;
+                }
+                &:hover a{
+                    color: $blue;
                 }
                 i{
                     color: transparent;
