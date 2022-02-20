@@ -148,7 +148,7 @@ $(document).on("click",".show-grid",function () {
 
 
 })
-function openCity(evt, cityName) {
+function openContent(evt, contentName) {
     var i, tabcontent, tablinks;
   
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -161,6 +161,6 @@ function openCity(evt, cityName) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(contentName).style.display = "block";
     evt.currentTarget.className += " active";
   }
